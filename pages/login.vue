@@ -1,5 +1,7 @@
 <template>
   <view class="page">
+    <index></index>
+    <up-toast ref="uToastRef"></up-toast>
     <view class="login-form-content">
       <view class="logo-content align-center justify-center flex margin-bottom">
         <text class="title">{{appName}}</text>
@@ -58,6 +60,8 @@
 </template>
 
 <script setup>
+  import { onShow,onHide,onUnload } from '@dcloudio/uni-app'
+  import index from '@/components/pdaScan/index'
   import {
     getCodeImg
   } from '@/api/login'
@@ -152,7 +156,7 @@
       const pages = getCurrentPages();
       if (pages.length === 1) {
         uni.reLaunch({
-          url:"/pages/essay/index"
+          url: "/pages/essay/index"
         })
       } else {
         uni.navigateBack({
@@ -207,6 +211,39 @@
     })
   }
   getCode();
+
+	onShow(()=>{
+		uni.$on('scancode',function(data){
+			// console.log('你想要的code：', data.code)
+      showToast({
+        type:"success",
+        message:data.code
+      })
+		})
+	})
+
+  const uToastRef = ref(null)
+
+  const showToast = (params) => {
+    uToastRef.value.show({
+      ...params,
+      complete() {
+        params.url && uni.navigateTo({
+          url: params.url
+        });
+      }
+    })
+  }
+
+  onHide(() => {
+    // 移除监听事件
+    uni.$off('scancode')
+  })
+
+  onUnload(() => {
+    // 移除监听事件
+    uni.$off('scancode')
+  })
 </script>
 
 <style lang="scss" scoped>

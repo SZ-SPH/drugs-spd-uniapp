@@ -347,7 +347,7 @@
       "path" : "pages/spd/scanInfo/index",
       "style" :
       {
-        "navigationBarTitleText": "扫码溯源",
+        "navigationBarTitleText": "扫码入库",
         "enablePullDownRefresh": true
       }
     }
