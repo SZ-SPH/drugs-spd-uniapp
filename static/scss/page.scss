@@ -1,0 +1,146 @@
+.search-bar {
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 10px 15px 10px;
+  background-color: #fff;
+  justify-content: space-between;
+
+  .right {
+    display: flex;
+    justify-content: flex-end;
+    // width: 110px;
+  }
+}
+.tag-wrap {
+  display: flex;
+}
+// 搜索表单
+.search-form {
+  margin: 0 10px;
+
+  .btn-group {
+    display: flex;
+    margin: 30px 10px;
+    justify-content: space-between;
+  }
+  .tag-item {
+    display: inline-flex;
+  }
+  .tag-item + .tag-item {
+    margin-left: 10px;
+  }
+
+  .search-title {
+    text-align: center;
+    font-size: 22px;
+    padding: 10px;
+  }
+}
+.info-item2 {
+  .info-line {
+    justify-content: space-between !important;
+  }
+}
+// 列表
+.info-item {
+  width: 100%;
+  padding: 5px 15px 0px;
+  box-sizing: border-box;
+  position: relative;
+  background: #fff;
+
+  .info-line2 {
+    justify-content: space-between !important;
+  }
+
+  .info-line,
+  .info-line2 {
+    margin-bottom: 8px;
+    font-size: 14px;
+    // line-height: 22px;
+    // font-weight: 400;
+    display: flex;
+    // align-items: flex-start;
+    word-break: break-all;
+    justify-content: flex-start;
+
+    .label-name {
+      width: 70px;
+      color: #666;
+      flex-shrink: 0;
+      font-size: 13px;
+    }
+
+    .title {
+      color: #000;
+      font-weight: bold;
+      font-size: 18px;
+      padding: 5px 0;
+    }
+  }
+
+  // 底部按钮
+  .info-btn-wrap {
+    padding: 10px;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+    display: flex;
+    // justify-content: flex-end;
+    word-break: break-all;
+    flex-wrap: wrap;
+
+    .tag-item + .tag-item {
+      margin-left: 10px;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.page-footer {
+  margin: 20px 30px;
+}
+
+.u-checkbox-group--row {
+  flex-wrap: wrap;
+}
+
+.edit-wrap {
+  margin-top: 5px;
+  background-color: #fff;
+
+  // 表单编辑底部按钮
+  .form-footer {
+    height: 60px;
+    line-height: 60px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    background-color: #fff;
+
+    .btn_wrap {
+      margin-top: 10px;
+      display: flex;
+      flex-wrap: nowrap;
+      align-items: center;
+      justify-content: space-evenly;
+
+      .cu-btn {
+        width: 45%;
+      }
+    }
+    .btn-group {
+      display: flex;
+      margin: 30px 30px;
+      justify-content: space-around;
+    }
+    .btn-item {
+      width: 120px;
+    }
+  }
+  // 编辑表单
+  .edit-form {
+    padding: 10px 10px 60px 10px;
+  }
+}

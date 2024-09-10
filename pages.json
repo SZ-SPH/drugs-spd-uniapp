@@ -1,0 +1,397 @@
+{
+  "easycom": {
+    "autoscan": true,
+    "custom": {
+      "^u--(.*)": "@/uni_modules/uview-plus/components/u-$1/u-$1.vue",
+      "^up-(.*)": "@/uni_modules/uview-plus/components/u-$1/u-$1.vue",
+      "^u-([^-].*)": "@/uni_modules/uview-plus/components/u-$1/u-$1.vue"
+    }
+  },
+  "pages": [
+    {
+      "path": "pages/login",
+      "style": {
+        "navigationBarTitleText": "登录"
+      }
+    },
+    {
+      "path": "pages/index",
+      "style": {
+        "navigationBarTitleText": "ZRAdmin移动端框架",
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/work/index",
+      "style": {
+        "navigationBarTitleText": "工作台"
+      }
+    },
+    {
+      "path": "pages/mine/index",
+      "style": {
+        "navigationBarTitleText": "我的",
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/mine/avatar/index",
+      "style": {
+        "navigationBarTitleText": "修改头像"
+      }
+    },
+    {
+      "path": "pages/mine/info/index",
+      "style": {
+        "navigationBarTitleText": "个人信息"
+      }
+    },
+    {
+      "path": "pages/mine/info/edit",
+      "style": {
+        "navigationBarTitleText": "编辑资料"
+      }
+    },
+    {
+      "path": "pages/mine/pwd/index",
+      "style": {
+        "navigationBarTitleText": "修改密码"
+      }
+    },
+    {
+      "path": "pages/mine/setting/index",
+      "style": {
+        "navigationBarTitleText": "应用设置"
+      }
+    },
+    {
+      "path": "pages/mine/help/index",
+      "style": {
+        "navigationBarTitleText": "常见问题"
+      }
+    },
+    {
+      "path": "pages/mine/about/index",
+      "style": {
+        "navigationBarTitleText": "关于我们"
+      }
+    },
+    {
+      "path": "pages/common/webview/index",
+      "style": {
+        "navigationBarTitleText": "浏览网页"
+      }
+    },
+    {
+      "path": "pages/common/textview/index",
+      "style": {
+        "navigationBarTitleText": "浏览文本"
+      }
+    },
+    {
+      "path": "pages/demo/index",
+      "style": {
+        "navigationBarTitleText": "演示",
+        "enablePullDownRefresh": false
+      }
+    },
+    {
+      "path": "pages/monitor/logininfo",
+      "style": {
+        "navigationBarTitleText": "登录日志",
+        "enablePullDownRefresh": false
+      }
+    },
+    {
+      "path": "pages/monitor/operlog",
+      "style": {
+        "navigationBarTitleText": "操作日志",
+        "enablePullDownRefresh": false
+      }
+    },
+    {
+      "path": "pages/socialLogin",
+      "style": {
+        "navigationBarTitleText": "三方登录",
+        "enablePullDownRefresh": false
+      }
+    },
+    {
+      "path": "pages/register",
+      "style": {
+        "navigationBarTitleText": ""
+      }
+    },
+    {
+      "path": "pages/message/message",
+      "style": {
+        "enablePullDownRefresh": true,
+        "navigationBarTitleText": "消息"
+      }
+    },
+    {
+      "path": "pages/notice/details",
+      "style": {
+        "navigationBarTitleText": "公告详情",
+        "enablePullDownRefresh": false
+      }
+    },
+    {
+      "path": "pages/system/user/user",
+      "style": {
+        "navigationBarTitleText": "用户管理",
+        "enablePullDownRefresh": false
+      }
+    },
+    {
+      "path": "pages/system/sysConfig/sysConfig",
+      "style": {
+        "navigationBarTitleText": "系统配置",
+        "enablePullDownRefresh": false
+      }
+    },
+    {
+      "path": "pages/system/sysConfig/edit",
+      "style": {
+        "navigationBarTitleText": "配置编辑",
+        "enablePullDownRefresh": false
+      }
+    },
+    {
+      "path": "pages/demo/table/table",
+      "style": {
+        "navigationBarTitleText": "table演示",
+        "enablePullDownRefresh": false
+      }
+    },
+    {
+      "path": "pages/demo/table/edit/edit",
+      "style": {
+        "navigationBarTitleText": "demo编辑",
+        "enablePullDownRefresh": false
+      }
+    },
+    {
+      "path": "pages/demo/table/table2",
+      "style": {
+        "navigationBarTitleText": "表格演示",
+        "enablePullDownRefresh": false
+      }
+    },
+    {
+      "path": "pages/monitor/onlineuser",
+      "style": {
+        "navigationBarTitleText": "在线用户列表",
+        "enablePullDownRefresh": true
+      }
+    },
+    {
+      "path": "pages/monitor/tasks/index",
+      "style": {
+        "navigationBarTitleText": "任务管理",
+        "enablePullDownRefresh": false
+      }
+    },
+    {
+      "path": "pages/monitor/tasks/edit",
+      "style": {
+        "navigationBarTitleText": "任务编辑",
+        "enablePullDownRefresh": false
+      }
+    },
+    {
+      "path": "pages/monitor/tasks/joblog",
+      "style": {
+        "navigationBarTitleText": "任务日志",
+        "enablePullDownRefresh": false
+      }
+    },
+    {
+      "path": "pages/mine/thirdBind/index",
+      "style": {
+        "navigationBarTitleText": "账号设置",
+        "enablePullDownRefresh": true
+      }
+    },
+    {
+      "path": "pages/mine/info/miniuserEdit",
+      "style": {
+        "navigationBarTitleText": "信息修改",
+        "enablePullDownRefresh": false
+      }
+    },
+    {
+      "path": "pages/moments/index",
+      "style": {
+        "navigationBarTitleText": "动态",
+        "enablePullDownRefresh": true,
+        "onReachBottomDistance": 150,
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/moments/publish",
+      "style": {
+        "navigationBarTitleText": "发布",
+        "enablePullDownRefresh": false,
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/moments/my",
+      "style": {
+        "navigationBarTitleText": "我的动态",
+        "enablePullDownRefresh": true,
+        "onReachBottomDistance": 150
+      }
+    },
+    {
+      "path": "pages/monitor/server",
+      "style": {
+        "navigationBarTitleText": "系统监控",
+        "enablePullDownRefresh": false
+      }
+    },
+    {
+      "path": "pages/essay/index",
+      "style": {
+        "navigationBarTitleText": "文章",
+        "enablePullDownRefresh": true,
+        "onReachBottomDistance": 150,
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/essay/details",
+      "style": {
+        "navigationBarTitleText": "详情",
+        "enablePullDownRefresh": false
+      }
+    },
+    {
+      "path": "pages/moments/details",
+      "style": {
+        "navigationBarTitleText": "详情",
+        "enablePullDownRefresh": true,
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/moments/topic",
+      "style": {
+        "navigationBarTitleText": "话题",
+        "enablePullDownRefresh": false
+      }
+    },
+    {
+      "path": "pages/mine/phoneBind/index",
+      "style": {
+        "navigationBarTitleText": "账号安全",
+        "enablePullDownRefresh": false
+      }
+    },
+    {
+      "path": "pages/moments/circledetails",
+      "style": {
+        "navigationBarTitleText": "圈子详情",
+        "enablePullDownRefresh": true,
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/fans/index",
+      "style": {
+        "navigationBarTitleText": "",
+        "enablePullDownRefresh": false,
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/notice/index",
+      "style": {
+        "navigationBarTitleText": "通知公告",
+        "enablePullDownRefresh": true
+      }
+    },
+    {
+      "path": "pages/message/sysNotice",
+      "style": {
+        "navigationBarTitleText": "系统通知",
+        "enablePullDownRefresh": false
+      }
+    },
+    // #ifdef H5
+    {
+      "path": "pages/notice/publish",
+      "style": {
+        "navigationBarTitleText": "发布通知",
+        "enablePullDownRefresh": false
+      }
+    }
+    // #endif
+    ,
+    {
+      "path": "pages/search",
+      "style": {
+        "navigationBarTitleText": "搜索"
+      }
+    },
+    {
+      "path": "pages/message/praise",
+      "style": {
+        "navigationBarTitleText": "赞和收藏",
+        "enablePullDownRefresh": true
+      }
+    },
+    {
+      "path" : "pages/spd/scanInfo/index",
+      "style" :
+      {
+        "navigationBarTitleText": "扫码溯源",
+        "enablePullDownRefresh": true
+      }
+    }
+  ],
+  "tabBar": {
+    "color": "#8a8a8a",
+    "selectedColor": "#000",
+    "borderStyle": "white",
+    "backgroundColor": "#fff",
+    "list": [{
+        "pagePath": "pages/essay/index",
+        "iconPath": "static/images/tabbar/home_.png",
+        "selectedIconPath": "static/images/tabbar/home.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/moments/index",
+        "iconPath": "static/images/tabbar/monent_.png",
+        "selectedIconPath": "static/images/tabbar/monent.png",
+        "text": "广场"
+      },
+      {
+        "pagePath": "pages/work/index",
+        "iconPath": "static/images/tabbar/work_.png",
+        "selectedIconPath": "static/images/tabbar/work.png",
+        "text": "工作台"
+      },
+      {
+        "pagePath": "pages/message/message",
+        "iconPath": "static/images/tabbar/message_.png",
+        "selectedIconPath": "static/images/tabbar/message.png",
+        "text": "消息"
+      },
+      {
+        "pagePath": "pages/mine/index",
+        "iconPath": "static/images/tabbar/mine_.png",
+        "selectedIconPath": "static/images/tabbar/mine.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "globalStyle": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "ZrAdmin",
+    "navigationBarBackgroundColor": "#FFFFFF"
+  }
+}
