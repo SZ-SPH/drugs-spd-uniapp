@@ -1,7 +1,5 @@
 <template>
   <view class="page">
-    <index></index>
-    <up-toast ref="uToastRef"></up-toast>
     <view class="login-form-content">
       <view class="logo-content align-center justify-center flex margin-bottom">
         <text class="title">{{appName}}</text>
@@ -23,10 +21,10 @@
       <view class="action-btn">
         <button @click="handleLogin" class="login-btn cu-btn block bg-blue lg round">登录</button>
       </view>
-      <view class="reg text-center" v-if="register">
+      <!-- <view class="reg text-center" v-if="register">
         <text class="text-grey1">没有账号？</text>
         <text @click="handleUserRegister" class="text-blue">立即注册</text>
-      </view>
+      </view> -->
     </view>
 
     <view class="other-login">
@@ -51,11 +49,11 @@
       </button>
       <!-- #endif -->
     </view>
-    <view class="xieyi text-center">
+    <!-- <view class="xieyi text-center">
       <text class="text-grey1">登录即代表同意</text>
       <text @click="handleUserAgrement" class="text-blue">《用户协议》</text>
       <text @click="handlePrivacy" class="text-blue">《隐私协议》</text>
-    </view>
+    </view> -->
   </view>
 </template>
 
@@ -122,6 +120,7 @@
   };
 
   async function handleLogin() {
+
     if (loginForm.value.username === "") {
       proxy.$modal.msgError("请输入您的账号")
     } else if (loginForm.value.password === "") {
@@ -156,7 +155,7 @@
       const pages = getCurrentPages();
       if (pages.length === 1) {
         uni.reLaunch({
-          url: "/pages/essay/index"
+          url: "/pages/work/index"
         })
       } else {
         uni.navigateBack({
@@ -212,38 +211,6 @@
   }
   getCode();
 
-	onShow(()=>{
-		uni.$on('scancode',function(data){
-			// console.log('你想要的code：', data.code)
-      showToast({
-        type:"success",
-        message:data.code
-      })
-		})
-	})
-
-  const uToastRef = ref(null)
-
-  const showToast = (params) => {
-    uToastRef.value.show({
-      ...params,
-      complete() {
-        params.url && uni.navigateTo({
-          url: params.url
-        });
-      }
-    })
-  }
-
-  onHide(() => {
-    // 移除监听事件
-    uni.$off('scancode')
-  })
-
-  onUnload(() => {
-    // 移除监听事件
-    uni.$off('scancode')
-  })
 </script>
 
 <style lang="scss" scoped>

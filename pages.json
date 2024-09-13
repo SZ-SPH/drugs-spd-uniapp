@@ -350,6 +350,13 @@
         "navigationBarTitleText": "扫码入库",
         "enablePullDownRefresh": true
       }
+    },
+    {
+      "path" : "pages/spd/traceItem/traceItem",
+      "style" :
+      {
+        "navigationBarTitleText" : "添加明细"
+      }
     }
   ],
   "tabBar": {
@@ -357,7 +364,8 @@
     "selectedColor": "#000",
     "borderStyle": "white",
     "backgroundColor": "#fff",
-    "list": [{
+    /*
+    {
         "pagePath": "pages/essay/index",
         "iconPath": "static/images/tabbar/home_.png",
         "selectedIconPath": "static/images/tabbar/home.png",
@@ -369,7 +377,8 @@
         "selectedIconPath": "static/images/tabbar/monent.png",
         "text": "广场"
       },
-      {
+    */
+    "list": [{
         "pagePath": "pages/work/index",
         "iconPath": "static/images/tabbar/work_.png",
         "selectedIconPath": "static/images/tabbar/work.png",

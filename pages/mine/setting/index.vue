@@ -85,7 +85,7 @@
   function dialogConfirm() {
     useUserStore().logOut().then(() => {
       uni.reLaunch({
-        url: '/pages/index'
+        url: '/pages/login'
       });
     })
   };
